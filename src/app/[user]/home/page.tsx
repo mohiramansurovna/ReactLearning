@@ -6,17 +6,17 @@ export default function Home() {
         {
             name: 'JS',
             href: `js`,
-            img: '/js.svg',
+            img: './js.svg',
         },
         {
             name: 'React',
             href: `react`,
-            img: '/react.svg',
+            img: './react.svg',
         },
         {
             name: 'Next',
             href: `next`,
-            img: '/next.svg',
+            img: './next.svg',
         },
     ];
     return (
