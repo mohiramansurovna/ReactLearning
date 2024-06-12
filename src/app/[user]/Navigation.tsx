@@ -1,21 +1,21 @@
 'use client';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import logo from '@/assets/Logo.png';
 import {usePathname} from 'next/navigation';
-import mainLink from '@/MainLink';
-import { TypeUser } from '@/Types';
+// import mainLink from '@/MainLink';
+// import { TypeUser } from '@/Types';
 export default function Navigation({user, topic}: {user: string; topic?: string}) {
-    const [photoURL, setPhotoURL]=useState<string>()
-    async function DataFetch() {
-        const responce= await fetch(`${mainLink}/authentication/data?user=${user}`)
-        const userJSON:TypeUser=await responce.json();
-        setPhotoURL(userJSON.photoURL)
-    }
-    useEffect(()=>{
-        DataFetch()
-    },[])
+    // const [photoURL, setPhotoURL]=useState<string>()
+    // async function DataFetch() {
+    //     const responce= await fetch(`${mainLink}/authentication/data?user=${user}`)
+    //     const userJSON:TypeUser=await responce.json();
+    //     setPhotoURL(userJSON.photoURL)
+    // }
+    // useEffect(()=>{
+    //     DataFetch()
+    // },[])
     const pathname = usePathname();
     const links = [
         {

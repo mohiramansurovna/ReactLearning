@@ -9,7 +9,6 @@
     "lint": "next lint",
     "serve-json": "json-server --watch db.json"
   },
-  
   "dependencies": {
     "@edgestore/react": "^0.1.6",
     "@edgestore/server": "^0.1.6",
@@ -20,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-dropzone": "^14.2.3",
+    "sharp": "^0.33.4",
     "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0",
     "zod": "^3.23.8"
