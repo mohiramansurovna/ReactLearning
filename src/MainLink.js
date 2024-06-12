@@ -1,2 +1,2 @@
-const mainLink='https://react-learning-qwg4umcaf-mohira-mansurovnas-projects.vercel.app/'
+const mainLink=''
 export default mainLink
