@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #86dac7;
+  color: #fff;
+}
+body header {
+  background-color: #263238;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: fixed;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+body header nav a {
+  width: 125px;
+  text-align: center;
+  border: solid 1px green;
+  border-radius: 20px;
+  padding: 10px;
+}
+body header nav a:hover {
+  background-color: rgb(105, 136, 105);
+  border-color: rgb(105, 136, 105);
+}
+body header nav .active {
+  background-color: #008000;
+  animation: openLink 0.1s;
+}
+body header nav .active:hover {
+  background-color: #008000;
+  border-color: green;
+}
+body main {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 20px;
+  padding-top: 100px;
+  background-color: #86dac7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  overflow-y: hidden;
+}
+body main > * {
+  margin-right: 250px;
+}
+body main h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .questions {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  padding-right: 100px;
+}
+body main .questions h4 {
+  font-size: 25px;
+  text-align: center;
+}
+body main .questions ul {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+body main .questions ul li {
+  width: 100%;
+}
+body main .questions ul li button {
+  background-color: #58d18f;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+}
+body main .questions ul li button.choosen {
+  border: dashed 2px #008000;
+  border-radius: 20px;
+}
+body main .questions ul li button.choosen:hover {
+  background-color: #58d18f;
+}
+body main .questions ul li button.choosen.unUse {
+  border-color: gray;
+  color: gray;
+}
+body main .questions ul li button.choosen.unUse:hover {
+  border-color: gray;
+  background-color: transparent;
+}
+body main div {
+  margin: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 28px;
+  align-items: center;
+}
+body main div:first-child {
+  justify-content: center;
+}
+body main div button {
+  width: 150px;
+  font-size: medium;
+  height: 35px;
+  border: dashed 2px #008000;
+  border-radius: 20px;
+}
+body main div button:hover {
+  background-color: #58d18f;
+}
+body main div button.unUse {
+  border-color: gray;
+  color: gray;
+}
+body main div button.unUse:hover {
+  border-color: gray;
+  background-color: transparent;
+}
+body main .result {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  padding-right: 300px;
+}
+body main .result div {
+  font-size: 28px;
+  margin: 50px 0;
+}
+body main .result button {
+  border: dashed 2px #008000;
+  border-radius: 20px;
+  width: 220px;
+  height: 35px;
+  display: inline-block;
+  margin: 50px 0 50px 250px;
+}
+body main .result button:hover {
+  background-color: #58d18f;
+}
+body main .result button.unUse {
+  border-color: gray;
+  color: gray;
+}
+body main .result button.unUse:hover {
+  border-color: gray;
+  background-color: transparent;
+}
+body main .result ul li {
+  border: dashed 3px;
+  border-color: transparent transparent green transparent;
+  padding: 10px;
+}
+body main .result ul li:hover {
+  background-color: #58d18f;
+}
+body main .result ul li div {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: medium;
+  margin: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body main .result ul li div h3 {
+  text-align: start;
+  color: rgb(56, 56, 56);
+}
+body main .result ul li div p {
+  text-align: start;
+}
+body main .finishedTopics {
+  width: 90vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-color: rgb(105, 136, 105) transparent;
+}
+body main .finishedTopics::-webkit-scrollbar {
+  width: 10px;
+}
+body main .finishedTopics::-webkit-scrollbar-thumb {
+  background-color: rgb(105, 136, 105);
+}
+body main .finishedTopics::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body main .finishedTopics h2 {
+  margin: 20px 0;
+  font-size: 25px;
+}
+body main .finishedTopics ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+}
+body main .finishedTopics ul li {
+  border: dashed 2px #008000;
+  border-radius: 20px;
+  border-radius: 0;
+}
+body main .finishedTopics ul li:hover {
+  background-color: #58d18f;
+}
+body main .finishedTopics ul li.unUse {
+  border-color: gray;
+  color: gray;
+}
+body main .finishedTopics ul li.unUse:hover {
+  border-color: gray;
+  background-color: transparent;
+}
+body main .finishedTopics ul li p {
+  font-size: 20px;
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+body main .finishedTopics ul li div i {
+  color: #008000;
+  margin: 0;
+  font-size: 24px;
+}
+body main .home {
+  display: flex;
+  width: 100vw;
+  height: -moz-max-content;
+  height: max-content;
+  justify-content: center;
+  margin: 0;
+  transition: transform 0.5s ease-in-out;
+}
+body main .home:hover {
+  transform: translateY(-20px);
+}
+body form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  max-width: 800px;
+  min-height: 400px;
+}
+body form h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body form p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+body form p:last-child {
+  text-align: center;
+}
+body form p:last-child a {
+  color: green;
+  text-shadow: 0 0 10px #fff;
+}
+body form p:last-child a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px green;
+}
+body form legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+}
+body form input {
+  width: 100%;
+  height: 30px;
+  border: dashed 1px green;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+body form input:-webkit-autofill,
+body form input:-webkit-autofill:hover,
+body form input:-webkit-autofill:focus,
+body form input:-webkit-autofill:active {
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-clip: border-box !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+body form div {
+  width: 100%;
+  margin: 50px 0 20px 0;
+}
+body form div button {
+  width: 46%;
+  border: dashed 2px #008000;
+  border-radius: 20px;
+  height: 30px;
+  margin: 0 5px;
+}
+body form div button:hover {
+  background-color: #58d18f;
+}
+body form div button.unUse {
+  border-color: gray;
+  color: gray;
+}
+body form div button.unUse:hover {
+  border-color: gray;
+  background-color: transparent;
+}
+body aside {
+  width: 300px;
+  height: 100vh;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: #263238;
+  scrollbar-color: rgb(105, 136, 105) transparent;
+}
+body aside::-webkit-scrollbar {
+  width: 10px;
+}
+body aside::-webkit-scrollbar-thumb {
+  background-color: rgb(105, 136, 105);
+}
+body aside::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body aside a {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  padding-left: 10px;
+  border: solid 1px;
+  border-color: transparent transparent rgb(105, 136, 105) transparent;
+}
+body aside .active {
+  background-color: rgb(105, 136, 105);
+}
+
+@keyframes openLink {
+  0% {
+    background: rgb(0, 128, 0);
+    background: radial-gradient(circle, rgb(0, 128, 0) 2%, rgb(91, 154, 84) 3%);
+  }
+  25% {
+    background: rgb(0, 128, 0);
+    background: radial-gradient(circle, rgb(0, 128, 0) 25%, rgb(91, 154, 84) 26%);
+  }
+  50% {
+    background: rgb(0, 128, 0);
+    background: radial-gradient(circle, rgb(0, 128, 0) 50%, rgb(91, 154, 84) 51%);
+  }
+  75% {
+    background: rgb(0, 128, 0);
+    background: radial-gradient(circle, rgb(0, 128, 0) 75%, rgb(91, 154, 84) 76%);
+  }
+  100% {
+    background: rgb(0, 128, 0);
+  }
+}/*# sourceMappingURL=main.css.map */
