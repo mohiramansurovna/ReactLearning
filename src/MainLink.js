@@ -1,2 +1,2 @@
-const mainLink='http://localhost:3000/'
+const mainLink='https://react-learning-qwg4umcaf-mohira-mansurovnas-projects.vercel.app/'
 export default mainLink
