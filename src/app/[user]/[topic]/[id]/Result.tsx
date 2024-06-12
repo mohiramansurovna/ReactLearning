@@ -7,9 +7,11 @@ import mainLink from '@/MainLink';
 export default function Result({
     incorrect,
     topicId,
+    topicName
 }: {
     incorrect: [{questionId:number, question: string; correct: string; urAnswer: string}];
     topicId: string;
+    topicName:string
 }) {
     const {score, setScore} = useContext(Score);
     const [ulDisplay, setUlDisplay] = useState('none');
@@ -27,7 +29,7 @@ export default function Result({
                 },
                 body: JSON.stringify([
                     pathname.split('/')[1],
-                    'js',
+                    topicName,
                     topicId.toString(),
                     score.toString(),
                 ]),

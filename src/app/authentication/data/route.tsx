@@ -1,4 +1,3 @@
-import mainLink from '@/MainLink';
 import {TypeUser} from '@/Types';
 let users: TypeUser[] = [
     {
@@ -12,7 +11,7 @@ let users: TypeUser[] = [
                 ['12', '5'],
             ],
             react: [['1', '1']],
-            next: [['7', '5']],
+            next: [],
         },
     },
     {
@@ -84,11 +83,9 @@ export async function PUT(request: NextRequest) {
                         break;
                 }
                 return user;
-            } else {
-                throw new Error('user not found| 404');
             }
         });
-        return NextResponse.json('user is modified');
+        return NextResponse.json('user modified');
     } else {
         return NextResponse.json("404 sorry u can't see this page");
     }

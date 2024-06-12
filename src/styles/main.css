@@ -28,9 +28,9 @@ body header nav {
   margin-right: 50px;
 }
 body header nav a {
-  width: 125px;
+  width: 150px;
   text-align: center;
-  border: solid 1px green;
+  border: solid 1px #58d18f;
   border-radius: 20px;
   padding: 10px;
 }
@@ -39,8 +39,12 @@ body header nav a:hover {
   border-color: rgb(105, 136, 105);
 }
 body header nav .active {
-  background-color: #008000;
+  background-color: #58d18f;
   animation: openLink 0.1s;
+}
+body header nav .active:last-child {
+  background-color: transparent;
+  border-color: #58d18f;
 }
 body header nav .active:hover {
   background-color: #008000;
@@ -144,7 +148,7 @@ body main .result {
   width: 100vw;
   height: 100vh;
   padding-top: 100px;
-  padding-right: 300px;
+  padding-right: 200px;
 }
 body main .result div {
   font-size: 28px;
@@ -153,7 +157,7 @@ body main .result div {
 body main .result button {
   border: dashed 2px #008000;
   border-radius: 20px;
-  width: 220px;
+  width: 200px;
   height: 35px;
   display: inline-block;
   margin: 50px 0 50px 250px;
@@ -229,6 +233,8 @@ body main .finishedTopics ul li {
   border: dashed 2px #008000;
   border-radius: 20px;
   border-radius: 0;
+  width: 260px;
+  height: 220px;
 }
 body main .finishedTopics ul li:hover {
   background-color: #58d18f;
@@ -244,13 +250,21 @@ body main .finishedTopics ul li.unUse:hover {
 body main .finishedTopics ul li p {
   font-size: 20px;
   width: 100%;
+  text-wrap: wrap;
   margin: 30px 0;
+  padding-inline: 0 20px;
   text-align: center;
 }
-body main .finishedTopics ul li div i {
-  color: #008000;
-  margin: 0;
-  font-size: 24px;
+body main .finishedTopics ul li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .finishedTopics ul h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%);
 }
 body main .home {
   display: flex;

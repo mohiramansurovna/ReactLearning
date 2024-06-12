@@ -9,6 +9,7 @@ export default async function Learning({params}: {params: {id: number, user:stri
             <Main
                 id={params.id}
                 user={params.user}
+                topicName={params.topic}
                 js={js}
             />
         </>

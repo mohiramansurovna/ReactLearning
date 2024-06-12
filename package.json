@@ -9,6 +9,7 @@
     "lint": "next lint",
     "serve-json": "json-server --watch db.json"
   },
+  
   "dependencies": {
     "@edgestore/react": "^0.1.6",
     "@edgestore/server": "^0.1.6",

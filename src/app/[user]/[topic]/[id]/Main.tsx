@@ -7,7 +7,7 @@ import {type Topic} from '../Aside';
 export const Score = React.createContext({score: 0, setScore: (score: number) => {}});
 export const Choosen = React.createContext({choosen: '', setChoosen: (choosen: string) => {}});
 
-export default function Main({id ,user, js}: {id: number; user:string; js: [topic: Topic]}) {
+export default function Main({id ,user, topicName, js}: {id: number; user:string; topicName:string; js: [topic: Topic]}) {
     const [questionId, setQuestionId] = useState(1);
     const [done, setDone] = useState(false);
     const topic = js[id];
@@ -95,6 +95,7 @@ export default function Main({id ,user, js}: {id: number; user:string; js: [topi
             //@ts-ignore
                 incorrect={incorrect}
                 topicId={id.toString()}
+                topicName={topicName}
             />
         </Score.Provider>
     );

@@ -23,13 +23,13 @@ export default function Navigation({user, topic}: {user: string; topic?: string}
             href: `/${user}/home`,
         },
         {
-            name: 'Your Learning',
+            name: `${user}'s Learning`,
             href: `/${user}/${topic}`,
         },
-        {
-            name:'Profile',
-            href:`/${user}/editProfile`
-        },
+        // {
+        //     name:'Profile',
+        //     href:`/${user}/editProfile`
+        // },
         {
             name: 'About (;',
             href: `/${user}/about`,
@@ -50,7 +50,7 @@ export default function Navigation({user, topic}: {user: string; topic?: string}
             <nav>
                 {links.map((link) => {
                     const isActive = pathname.startsWith(link.href);
-                    if (!(!topic && link.name === 'Your Learning')) {
+                    if (!(!topic && link.name === `${user}'s Learning`)) {
                         return (
                             <Link
                                 className={isActive ? ' active' : ''}
@@ -61,7 +61,7 @@ export default function Navigation({user, topic}: {user: string; topic?: string}
                         );
                     }
                 })}
-                <Image src={photoURL?photoURL:'https://files.edgestore.dev/2buizor9f52z0fnh/myPublicImages/_public/3fcfb0e7-c5e3-43f1-a295-768f922172df.jpg'} width={70} height={70} alt='profile photo'/>
+                {/* <Image src={photoURL?photoURL:'https://files.edgestore.dev/2buizor9f52z0fnh/myPublicImages/_public/3fcfb0e7-c5e3-43f1-a295-768f922172df.jpg'} width={70} height={70} alt='profile photo'/> */}
             </nav>
         </header>
     );

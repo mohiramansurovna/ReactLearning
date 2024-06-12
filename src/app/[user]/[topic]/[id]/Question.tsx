@@ -24,7 +24,7 @@ export default function Question({
 
     return (
         <>
-            <h4>{questionId}  //  {question}</h4>
+            <h4>{questionId}  \\  {question}</h4>
             <ul>
                 <li>
                     <button
