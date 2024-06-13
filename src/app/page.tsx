@@ -35,7 +35,7 @@ export default function HomePage() {
                     className='ml-24'
                         width={240}
                         height={300}
-                        src={`./images/catsatisfied.svg`}
+                        src={`/images/catsatisfied.svg`}
                         alt='satisfied cat'
                     />
                 </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
                     className='ml-64'
                         width={240}
                         height={300}
-                        src={`./images/catlol.svg`}
+                        src={`/images/catlol.svg`}
                         alt='lol cat'
                     />
                 </div>
@@ -55,7 +55,7 @@ export default function HomePage() {
                     className='ml-28'
                         width={240}
                         height={300}
-                        src={`./images/catweary.svg`}
+                        src={`/images/catweary.svg`}
                         alt='weary cat'
                     />
                     <p className='font-bold font-sans ml-5 text-black text-[35px]'>If u find bugs please tell me</p>

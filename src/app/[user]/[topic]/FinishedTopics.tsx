@@ -33,7 +33,7 @@ export default function FinishedTopics({
                                         {item[1] === '1' ? (
                                             <div>
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
@@ -42,13 +42,13 @@ export default function FinishedTopics({
                                         ) : item[1] === '2' ? (
                                             <div>
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
@@ -57,19 +57,19 @@ export default function FinishedTopics({
                                         ) : item[1] === '3' ? (
                                             <div>
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
@@ -78,25 +78,25 @@ export default function FinishedTopics({
                                         ) : item[1] === '4' ? (
                                             <div>
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
@@ -105,31 +105,31 @@ export default function FinishedTopics({
                                         ) : (
                                             <div>
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
                                                 />
                                                 <Image
-                                                    src={`./images/star.svg`}
+                                                    src={`/images/star.svg`}
                                                     alt='star'
                                                     width={40}
                                                     height={40}
